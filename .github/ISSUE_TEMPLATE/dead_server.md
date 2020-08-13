@@ -1,5 +1,5 @@
 ---
-name: dead_server
+name: dead server
 about: report dead server
 title: dead server <address>
 labels: dead-server

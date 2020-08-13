@@ -1,5 +1,5 @@
 ---
-name: new_server
+name: new server
 about: report new server
 title: new server <address>
 labels: new-server
