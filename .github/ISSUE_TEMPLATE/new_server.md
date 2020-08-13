@@ -1,7 +1,7 @@
 ---
 name: new_server
-about: new server <address>
-title: new server
+about: report new server
+title: new server <address>
 labels: new-server
 assignees: blockparole
 

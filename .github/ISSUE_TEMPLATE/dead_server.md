@@ -1,7 +1,7 @@
 ---
 name: dead_server
-about: dead server <address>
-title: dead server
+about: report dead server
+title: dead server <address>
 labels: dead-server
 assignees: blockparole
 
