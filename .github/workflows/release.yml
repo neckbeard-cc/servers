@@ -16,7 +16,7 @@ jobs:
       - name: get changes
         uses: actions/checkout@v2
 
-      - name: get commit info
+      - name: get timestamp
         run: echo ::set-env name=EPOCH::"$(date +%s)"
 
       - name: prepare release
