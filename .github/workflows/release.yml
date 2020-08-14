@@ -27,7 +27,7 @@ jobs:
         with:
           tag_name: ${{ env.EPOCH }}
           release_name: ${{ env.EPOCH }}
-          body: automated release at commit ${{ env.EPOCH }}
+          body: automated release at epoch ${{ env.EPOCH }}
           draft: false
           prerelease: false
 
