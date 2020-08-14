@@ -1,0 +1,45 @@
+python: maven
+
+'on':
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout changes
+        uses: actions/checkout@v2
+
+      - name: get commit info
+        run: echo ::set-env name=ARTIFACT_NAME::"$GITHUB_SHA"
+
+      - name: prepare release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          body: automated release at commit ${{ env.SHA }}
+          draft: false
+          prerelease: false
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - run: python generate.py
+
+      - name: upload release assets
+        uses: csexton/release-asset-action@v2
+        with:
+          file: servers.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          release-url: ${{ steps.create_release.outputs.upload_url }}
+
