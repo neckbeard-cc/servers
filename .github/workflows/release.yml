@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: get commit info
-        run: echo ::set-env name=ARTIFACT_NAME::"$GITHUB_SHA"
+        run: echo ::set-env name=HASH::"$GITHUB_SHA"
 
       - name: prepare release
         id: create_release
@@ -25,9 +25,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
-          body: automated release at commit ${{ env.ARTIFACT_NAME }}
+          tag_name: ${{ env.HASH }}
+          release_name: ${{ env.HASH }}
+          body: automated release at commit ${{ env.HASH }}
           draft: false
           prerelease: false
 
