@@ -31,10 +31,13 @@ jobs:
           draft: false
           prerelease: false
 
-      - uses: actions/setup-python@v2
+      - name: prepare python
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-      - run: python generate.py
+
+      - name: generate servers.json
+        run: python generate.py
 
       - name: upload release assets
         uses: csexton/release-asset-action@v2
