@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: checkout changes
+      - name: get changes
         uses: actions/checkout@v2
 
       - name: get commit info
@@ -31,10 +31,11 @@ jobs:
           draft: false
           prerelease: false
 
-      - uses: actions/setup-python@v2
+      - name: generate json
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-      - run: python generate.py
+        run: python generate.py
 
       - name: upload release assets
         uses: csexton/release-asset-action@v2
