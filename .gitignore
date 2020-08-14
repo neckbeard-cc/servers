@@ -1,6 +1,13 @@
 # generated minetrack config
 servers.json
 
+# intellij
+.idea/
+out/
+*.iml
+*.ipr
+*.iws
+
 # windows
 Thumbs.db
 [Dd]esktop.ini
