@@ -1,4 +1,4 @@
-here tha0b0t.org
+0b0t.org
 10b10t.org
 1b1t.org
 1b1t.tk
@@ -31,6 +31,7 @@ anarchydev.xyz
 anarchyhub.xyz
 anarchylands.net
 anarchy-mc.com
+anarchy-mc.org
 anarchy.minetexas.com
 antfarmanarchy.zapto.org
 b2t2.org
@@ -51,10 +52,10 @@ fi2.mineserv.su
 gamingbuds.tpgaming.net
 greaper88.ddns.us
 hackperu.ml
+here tha0b0t.org
 hisparquia.org
 hjf42.ga
 impurity.me
-play.2u2m.ml
 l2x9.org
 lostlands.co
 m2b4.server.nu
@@ -65,6 +66,7 @@ mcanarchy.net
 mcanarchy.org
 mc.artisiacraft.com
 mc.aussieanarchy.com
+mc.cobel-motion.xyz
 mc.cobelmotion.xyz
 mc.rubyanarchy.tk
 mc.salc2.com
@@ -78,6 +80,7 @@ openanarchy.cf
 piganarchy.cf
 plain-anarchy.ga
 play.2b4u.co.uk
+play.2u2m.ml
 play.9a9a.ml
 play.cb2k.xyz
 play.dementeranarchy.tk
