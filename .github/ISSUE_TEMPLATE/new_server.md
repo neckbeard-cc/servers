@@ -3,7 +3,7 @@ name: new server
 about: report new server
 title: new server <address>
 labels: new-server
-assignees: blockparole
+assignees: nothub
 
 ---
 

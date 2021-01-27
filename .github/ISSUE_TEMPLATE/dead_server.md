@@ -3,7 +3,7 @@ name: dead server
 about: report dead server
 title: dead server <address>
 labels: dead-server
-assignees: blockparole
+assignees: nothub
 
 ---
 
