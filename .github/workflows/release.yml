@@ -39,7 +39,8 @@ jobs:
       - name: upload release assets
         uses: csexton/release-asset-action@v2
         with:
-          file: servers.json
+          files: |
+            servers.json
+            servers.txt
           github-token: ${{ secrets.GITHUB_TOKEN }}
           release-url: ${{ steps.create_release.outputs.upload_url }}
-
